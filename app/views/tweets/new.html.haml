@@ -1,0 +1,14 @@
+.contents-row
+  .container
+    %h3
+      写真
+      =  form_with model: @image, local: true do |form|
+        =  form.text_field :image, placeholder : "Image Url"  end
+      
+    %h3
+      投稿する
+      =  form_with model: @tweet, local: true do |form|
+        =  form.text_field :name, placeholder : "Nickname"
+        =  form.text_field :text, placeholder : "text", rouw: "10" end
+        
+

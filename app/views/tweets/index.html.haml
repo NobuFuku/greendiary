@@ -1,0 +1,8 @@
+.contents-row
+  - @tweet.each do |tweet|
+    .content-post 
+      %p= tweet.text
+      %span.name 
+        = tweet.name
+  -# 閉じタグの<% end %>はインデントで指定しているので不要
+
