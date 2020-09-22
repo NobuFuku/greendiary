@@ -3,7 +3,7 @@ class TweetsController < ApplicationController
     @tweets = Tweet.all
   end
 
-  def def new
+  def new
     @tweets = Tweet.new
     @images = Image.new
   end
